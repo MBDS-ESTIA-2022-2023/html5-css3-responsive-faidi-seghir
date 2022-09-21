@@ -1,0 +1,120 @@
+
+* {
+  box-sizing: border-box;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'buttons'
+    'main'
+    'footer';
+  background-color: #fff;
+  padding: 0px;
+}
+.item1 { grid-area: header;}
+.item3 { grid-area: item1; }
+.item4 { grid-area: item2; }
+.item4 { grid-area: item3; }
+.footer { grid-area: footer; }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+.flex-item-left {
+  background-color: #3ca9e2;
+  padding: 0px;
+  flex: 50%;
+}
+.flex-item-right {
+  background-color: #3ca9e2;
+  padding: 0px;
+  flex: 50%;
+}
+.flex-item-left2 {
+  background-color: #fff;
+  padding: 0px;
+  flex: 50%;
+}
+.flex-item-right2 {
+  background-color: #fff;
+  padding: 0px;
+  flex: 50%;
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 500px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+header {
+  background-color: #3ca9e2;
+  padding: 20px;
+  text-align:center;
+  font-size: 30px;
+  color: white;
+  display: flex;
+}
+footer {
+  background-color: #3ca9e2;
+  padding: 5px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+#buttons{
+    width:100%;
+    display : flex;
+    background-color: #3ca9e2;
+    color: white;
+}
+#buttons div {width:50%}
+html {
+  height: 100%;
+  scroll-padding-top: calc(4.5rem - 1px);
+}
+.page-section2 {
+  padding: 0px;
+  background: #fff;
+}
+.page-section .page-section-heading {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 1000px) {
+  .page-section .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+ .imagelogin{
+    width:8%;
+    height:8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+img {
+weight:400px;
+height:300px;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'buttons'
+    'main'
+    'footer';
+  background-color: #fff;
+  padding: 0px;
+}
+.prix{
+  font-style:italic;
+  color: rgb(232, 75, 75);
+}
+.date{
+  font-style: oblique;
+  color: #5755c6;
+}
